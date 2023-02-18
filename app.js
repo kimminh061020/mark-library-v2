@@ -57,13 +57,13 @@ function _toPrimitive(input, hint) {
 var book_collection = [
   {
     id: 1,
-    title: "A Game of Thrones ",
-    author: "George R. R. Martin",
-    nbr_of_pages: "694",
-    language: "	English",
-    publishing_date: "July 1 1996",
+    title: "Test book 1",
+    author: "Mark_Nguyen",
+    nbr_of_pages: "200",
+    language: "	Vietnamese",
+    publishing_date: "July 1 2023",
     read_status: true,
-    insertion_date: "11/23/2020, 1:48:58 PM"
+    insertion_date: "11/23/2023, 1:48:58 PM"
   }
 ];
 
@@ -416,15 +416,15 @@ var VueManager = /*#__PURE__*/ (function () {
     }
   ]);
   return VueManager;
-})(); //im selection the second row avoiding the status_bar row
+})(); //im selection the second row avoiding the status_section row
 var bookshelf = new VueManager(document.querySelectorAll(".row")[1]);
-var new_book_form = new VueManager(document.querySelector(".new-book-form"));
+var new_book_form = new VueManager(document.querySelector(".add-book-form"));
 
 //dom Elements
-var add_new_book_btn = document.querySelector(".new-book");
+var add_new_book_btn = document.querySelector(".add-new-book");
 var new_book_section = document.querySelector(".add_book_section");
 var new_book_input_fields = document.querySelectorAll(
-  "input, .new-book-form select"
+  "input, .add-book-form select"
 );
 var empty_lib_section = document.querySelector(".empty_library_section");
 var books_total_count = document.querySelector("#books_count");
